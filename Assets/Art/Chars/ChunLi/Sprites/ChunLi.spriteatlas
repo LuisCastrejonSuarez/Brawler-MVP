@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ChunLi
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 2cc58ff33760e374ea53dcc6c68129c7, type: 3}
+    totalSpriteSurfaceArea: 4144854
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: dbc1b751b161df149b4295b69ddc57cd, type: 3}
+  - {fileID: 21300000, guid: 5a2acd5156c0adc4384301c2388017a2, type: 3}
+  - {fileID: 21300000, guid: 22630091b0eda1740b68bf31426c3cbd, type: 3}
+  - {fileID: 21300000, guid: 455b81a1d5aa61a40a2ccd9110071f4c, type: 3}
+  - {fileID: 21300000, guid: 1c68c5b1926d3984e929d171133e3af1, type: 3}
+  - {fileID: 21300000, guid: 8d7fea323657c874cacd466eca2cb0a0, type: 3}
+  - {fileID: 21300000, guid: 49b623a2545c6fe49b97ed1897b79072, type: 3}
+  - {fileID: 21300000, guid: 62bfe563dc3ed994491206b7894234f8, type: 3}
+  - {fileID: 21300000, guid: 40ef75a3681a1de4eb9c68b70ee5188b, type: 3}
+  - {fileID: 21300000, guid: 1101a5c34dd8e584293cf363697ffc32, type: 3}
+  - {fileID: 21300000, guid: 69c992148b019ee4187d266b44bae781, type: 3}
+  - {fileID: 21300000, guid: 9dc34f2480bee0d449e2e45625b0bcc6, type: 3}
+  - {fileID: 21300000, guid: 2dfe5d64bb4ddab429eab69c80d00a8c, type: 3}
+  - {fileID: 21300000, guid: cb245da4addc9344188ab3804b0e8b8c, type: 3}
+  - {fileID: 21300000, guid: 2fcaf3e4e8612ed4ea4ce79c42f06169, type: 3}
+  - {fileID: 21300000, guid: cd13aa660989e1c4b87301729b26e45a, type: 3}
+  - {fileID: 21300000, guid: 5598d376e149b84469f899d57e491e67, type: 3}
+  - {fileID: 21300000, guid: fa414a1735a76c5479ad17dd1fd064f7, type: 3}
+  - {fileID: 21300000, guid: c9b633474984a87499a1683747e05781, type: 3}
+  - {fileID: 21300000, guid: 68dab9771f896db4fb0ee96a27f9a411, type: 3}
+  - {fileID: 21300000, guid: 591d0748f34e13140a95940c8dd83bb6, type: 3}
+  - {fileID: 21300000, guid: 4348e56853439e445aad796a847b108c, type: 3}
+  - {fileID: 21300000, guid: 971b52e8c1764a543942c04d2bf0f13f, type: 3}
+  - {fileID: 21300000, guid: 9b4535e855a896e4298001b8874265de, type: 3}
+  - {fileID: 21300000, guid: 282e9be8d50bfd44bbcf9cd83ae05379, type: 3}
+  - {fileID: 21300000, guid: 1b8131f801c31b847ac70c449669dadb, type: 3}
+  - {fileID: 21300000, guid: a2eef2bad21a67d4db2b028dd3e666d1, type: 3}
+  - {fileID: 21300000, guid: aa76c4fa3bc94d9468ae30f220b58814, type: 3}
+  - {fileID: 21300000, guid: b7a29ebbd392a944eb621693e2f73c20, type: 3}
+  - {fileID: 21300000, guid: 40cc816c855e5c84990777025d39700b, type: 3}
+  - {fileID: 21300000, guid: b3a70bacecb79704eb356f43bb7bec4d, type: 3}
+  - {fileID: 21300000, guid: a0d15dbc9e45fdb49b5060704b241b0f, type: 3}
+  - {fileID: 21300000, guid: cdd5883d00fc70045958c992d5dd60fc, type: 3}
+  - {fileID: 21300000, guid: e5e8e44d0de2edd4dabd8a87265d09c9, type: 3}
+  - {fileID: 21300000, guid: a10b8bcd0e6fe884d8119bfea145e5ab, type: 3}
+  - {fileID: 21300000, guid: 0991591eb2b35f5458e50d0022f597d1, type: 3}
+  - {fileID: 21300000, guid: 485cb92e13fcd914893eb80a07adbb30, type: 3}
+  - {fileID: 21300000, guid: 59d66e5e0565e1a4985bc1e623d28a7f, type: 3}
+  - {fileID: 21300000, guid: 4dea41de6f60d7248862d25c3bf82881, type: 3}
+  - {fileID: 21300000, guid: 859bfdeef9e1b734cafed34292c4a740, type: 3}
+  - {fileID: 21300000, guid: 4b01423f0a3c21540b2e4b4dad59017c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ChunLi (16)
+  - ChunLi (19)
+  - ChunLi (21)
+  - ChunLi (37)
+  - ChunLi (2)
+  - ChunLi (22)
+  - ChunLi (1)
+  - ChunLi (30)
+  - ChunLi (20)
+  - ChunLi (6)
+  - ChunLi (27)
+  - ChunLi (4)
+  - ChunLi (5)
+  - ChunLi (34)
+  - ChunLi (15)
+  - ChunLi (18)
+  - ChunLi (36)
+  - ChunLi (14)
+  - ChunLi (12)
+  - ChunLi (31)
+  - ChunLi (28)
+  - ChunLi (3)
+  - ChunLi (25)
+  - ChunLi (33)
+  - ChunLi (8)
+  - ChunLi (11)
+  - ChunLi (7)
+  - ChunLi (35)
+  - ChunLi (32)
+  - ChunLi (10)
+  - ChunLi (40)
+  - ChunLi (9)
+  - ChunLi (13)
+  - ChunLi (17)
+  - ChunLi (38)
+  - ChunLi (39)
+  - ChunLi (24)
+  - ChunLi (23)
+  - ChunLi (26)
+  - ChunLi (29)
+  - ChunLi (41)
+  m_Tag: ChunLi
+  m_IsVariant: 0
