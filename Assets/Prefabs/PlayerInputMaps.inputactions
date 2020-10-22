@@ -1,0 +1,71 @@
+{
+    "name": "PlayerInputMaps",
+    "maps": [
+        {
+            "name": "Game",
+            "id": "b05b04ea-d442-4ea9-838b-6ae4863c41b1",
+            "actions": [
+                {
+                    "name": "move",
+                    "type": "Value",
+                    "id": "41dc6184-8791-4eb1-b208-828120b3484e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "punch",
+                    "type": "Button",
+                    "id": "c172a7f4-9bd4-4408-a720-2248b82602ae",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "rotation",
+                    "type": "Value",
+                    "id": "fe0dcfa7-6739-4735-8e06-746351dfe129",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "45259827-90ee-4f4d-bd0a-580264494e19",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "639b47e8-4467-406a-bf73-4a4ab633c19e",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "punch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "629f8589-6992-42bb-b65e-641ad006cb0d",
+                    "path": "<TrackedDevice>/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
