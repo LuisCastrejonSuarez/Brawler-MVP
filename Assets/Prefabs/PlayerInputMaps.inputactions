@@ -99,17 +99,6 @@
                 },
                 {
                     "name": "",
-                    "id": "f883d14c-1b21-4d57-bf21-ca37b1b2a8e3",
-                    "path": "<Mouse>/delta",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "639b47e8-4467-406a-bf73-4a4ab633c19e",
                     "path": "<Gamepad>/buttonWest",
                     "interactions": "Press",
@@ -123,17 +112,6 @@
                     "name": "",
                     "id": "8350bc34-6fb6-480a-a24b-2f4fca425969",
                     "path": "<Keyboard>/enter",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "punch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "434fb98a-792e-4da2-aaa4-e1936d41f227",
-                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

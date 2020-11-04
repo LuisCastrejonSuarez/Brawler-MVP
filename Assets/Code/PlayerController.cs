@@ -1,7 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public struct InputMapGame
 {
@@ -14,18 +17,20 @@ public class PlayerController : MonoBehaviour
     public InputMapGame input;
     public PlayerInput player;
     public Animator animator;
-
+    public Slider uiLife;
+    public int life;
+    
     public void OnMove(InputAction.CallbackContext callback)
     {
         input.move = callback.ReadValue<Vector2>();
         if(input.move.x!=0)
-            transform.localScale = new Vector3((input.move.x < 0) ? -1 : 1, 1, 1);
+            animator.gameObject.transform.localScale = new Vector3((input.move.x < 0) ? -0.25f : 0.25f, 0.25f, 1);
     }
     public void OnPunch(InputAction.CallbackContext callback)
     {
         Debug.Log("punching");
         if(callback.phase== InputActionPhase.Started)
-        input.punch = true;
+            input.punch = true;
     }
     private void OnEnable()
     {
@@ -52,18 +57,25 @@ public class PlayerController : MonoBehaviour
         /* animator update */
         animator.SetFloat("speed", finalmovement.magnitude);
         
-
         if (input.punch)
         {
             input.punch = false;
             animator.SetTrigger("punch");
         }
+
+        uiLife.value = life;
     }
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag=="Damage")
         {
             animator.SetTrigger("damage");
+            --life;
+            if(life==0)
+            {
+                AudioManager.PlaySound(AudioManager.AUDIOS.KILL);
+                gameObject.SetActive(false);
+            }
         }
     }
 }
