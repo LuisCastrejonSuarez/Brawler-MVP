@@ -19,7 +19,11 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public Slider uiLife;
     public int life;
-    
+
+    //feedbacks
+    public Feedback punchFeedback;
+    public Feedback killFeedback;
+
     public void OnMove(InputAction.CallbackContext callback)
     {
         input.move = callback.ReadValue<Vector2>();
@@ -73,8 +77,12 @@ public class PlayerController : MonoBehaviour
             --life;
             if(life==0)
             {
-                AudioManager.PlaySound(AudioManager.AUDIOS.KILL);
+                FeedbackManager.PlayFeedback(killFeedback);
                 gameObject.SetActive(false);
+            }
+            else
+            {
+                FeedbackManager.PlayFeedback(punchFeedback);
             }
         }
     }

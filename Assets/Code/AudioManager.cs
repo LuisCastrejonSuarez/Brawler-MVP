@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource asource;
     public enum AUDIOS
     {
+        NONE = -1,
         KILL = 0,
         PUNCH = 1,
         SPLASH = 2,
