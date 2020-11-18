@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BigMonster.EventManager;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -10,10 +11,23 @@ public class Game
     public int level;
     public float timeElapsed;
     public string playerName;
+    public bool ready;
 }
+
+
+
 
 public class GameState : MonoBehaviour
 {
+    // Game Events
+    public static string GAME_START = "GAME_START";
+    public static string GAME_END = "GAME_END";
+
+    // Player Events
+    public static string PLAYER_SPAWN= "PLAYER_SPAWN";
+    public static string PLAYER_PUNCH= "PLAYER_PUNCH";
+    public static string PLAYER_DIE= "PLAYER_DIE";
+
     // Inicio Singleton Pattern
     private static GameState instance;
 
@@ -50,6 +64,18 @@ public class GameState : MonoBehaviour
 
     private void Start()
     {
+        Load();
+        saveData.ready = false;
+        EventManager.StartListening(GAME_START, InitGame);
+    }
+
+    private void InitGame(object arg0, GameObject arg1)
+    {
+        saveData.ready = true;
+    }
+
+    public static void Load()
+    {
         StreamReader reader;
         try
         {
@@ -61,12 +87,12 @@ public class GameState : MonoBehaviour
                 Debug.Log(line);
                 Debug.Log("Level: " + instance.saveData.level);
             }
-        }catch(System.Exception e)
+        }
+        catch (System.Exception e)
         {
             Save();
         }
     }
-
     public static void Save()
     {
         StreamWriter writer;
